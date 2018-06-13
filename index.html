@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Subordinate Check</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <style type="text/css">
+        body {
+            padding: 50px;
+        }
+        h2 {
+            margin-bottom: 35px;
+        }
+        select {
+            cursor: pointer;
+        }
+    </style>
+
+  </head>
+  <body>
+    <div class="container">
+        <button class="btn btn-primary" id="gen">generate table</button>
+    </div>
+
+    <script>
+	   const numberArray = [];
+        for (let i = 1; i <= 12; i++){
+            numberArray.push(i); 	
+        }
+
+        function multiplyArray() {
+            const numbers = numberArray;
+            for (let number of numbers ) {
+                let i = 0;
+                document.write('<div>');
+                for(i=1;i<13;i++) {
+                    document.write(number*i + '&nbsp;');
+                }
+                document.write("</div>");
+            }
+        }
+
+        gen.addEventListener("click", multiplyArray, true);
+
+    </script>
+
+  </body>
+</html>
